@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <img src="images/centre_destudis_politcnics_logo.jpg" alt="centre_destudis_politcnics_logo">
+    </header>    
+
+    <img id="centredeestudis" src="images/centre-d-estudis-politecnics.png" alt="centre-d-estudis-politecnics">
+
+    <main>
+        <div class="wrapper">
+            <h1>Formulario</h1>
+            <div class="input-box">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <label for="apellido"></label>
+                <input type="text" name="apellido" id="apellido" maxlength="25" placeholder="Apellido">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <label for="correo"></label>
+                <input type="text" name="correo" id="correo" placeholder="Email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+
+            </div>
+            <div class="input-select">
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="SMX1">SMX1</option>
+                    <option value="SMX2">SMX2</option>
+                    <option value="DAW1">DAW1</option>
+                    <option value="DAM1">DAM1</option>
+                    <option value="DAW2">DAW2</option>
+                    <option value="DAM2">DAM2</option>
+                </select>
+            </div>
+            <div class="input-checkbox">
+                <label for="modulos">Modulos a los que te quieres matricular:</label><br>
+                <input type="checkbox" name="modulos" id="modulos" >M1<br>
+                <input type="checkbox" name="modulos" id="modulos" >M2<br>
+                <input type="checkbox" name="modulos" id="modulos" >M3<br>
+                <input type="checkbox" name="modulos" id="modulos" >M4<br>
+                <input type="checkbox" name="modulos" id="modulos" >M5<br>
+                <input type="checkbox" name="modulos" id="modulos" >M6<br>
+                <input type="checkbox" name="modulos" id="modulos" >M7<br>
+                <input type="checkbox" name="modulos" id="modulos" >M8<br>
+                <input type="checkbox" name="modulos" id="modulos" >M9<br>
+                <input type="checkbox" name="modulos" id="modulos" >M10<br>
+                <input type="checkbox" name="modulos" id="modulos" >M11<br>
+            </div>
+            <div class="input-box">
+                <label for="nota"></label>
+                <input type="number" name="nota" id="nota" placeholder="Nota media" min="5" max="10">
+            </div>
+            <div class="privacidad">
+                <label>
+                    <input type="radio" name="privacidad" value="privacidad" required>
+                    Entiendo y acepto la política de privacidad, reconociendo el manejo de mis datos personales según las condiciones establecidas. *
+                </label>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}
+
+#centredeestudis {
+    position: absolute;
+    height: 80px;
+    left: 50%;
+    top: 10px;
+    transform: translatex(-50%);
+    background: white;
+    border: 10px solid white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 100px 0 25px 0;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+label[for="nacimiento"] {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-select {
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.input-select select {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    padding: 8px;
+    border: 2px solid rgba(255,255,255, 0.2);
+    border-radius: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.input-select select option {
+    color: black; 
+}
+
+.input-checkbox{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-checkbox input {
+    accent-color: red;
+}
+
+.wrapper .privacidad {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;    
+    margin: 20px;
+}
+
+.privacidad :hover {
+    text-decoration: underline;
+}
+
+.privacidad label input {
+    accent-color: red;
+    margin-right: 3px;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.wrapper .btn:active {
+    transform: scale(0.95);
+    background: #eee;
+    transition: transform 0.1s ease;
+}
